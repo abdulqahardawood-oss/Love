@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f7f2eb" />
+  <meta name="description" content="A little letter, written with all my heart." />
+  <title>A letter for Amara</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="floaters" aria-hidden="true"><span>♥</span><span>♡</span><span>♥</span><span>♡</span><span>♥</span><span>♡</span><span>♥</span><span>♡</span></div>
+  <header class="topbar">
+    <a class="brand" href="#top"><span class="brand-mark" aria-hidden="true">♥</span> A LITTLE LOVE NOTE</a>
+    <div class="music-wrap">
+      <button class="music-button" id="music-toggle" type="button" aria-expanded="false" aria-controls="spotify-player-wrap"><span aria-hidden="true">♫</span><span id="music-label">Listen to Shape of You</span></button>
+      <div class="spotify-player is-concealed" id="spotify-player-wrap" aria-hidden="true">
+        <div id="spotify-embed" aria-label="Spotify player for Shape of You"></div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="top">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> SOMETHING I SHOULD HAVE SAID</p>
+        <h1>For the one<br />who makes <em>life softer.</em></h1>
+        <p class="hero-intro">Some words deserve a little more care. This one is for you, <span data-recipient>Amara</span>.</p>
+        <button class="text-link" id="open-letter" type="button">Read your letter <span aria-hidden="true">↓</span></button>
+        <div class="little-note"><span aria-hidden="true">✧</span> Take your time. There's no rush.</div>
+      </div>
+      <div class="envelope-stage">
+        <div class="orbit orbit-one" aria-hidden="true"></div><div class="orbit orbit-two" aria-hidden="true"></div>
+        <span class="orbit-heart" aria-hidden="true">♡</span>
+        <button class="envelope" id="envelope" type="button" aria-label="Open your letter" aria-expanded="false" aria-controls="letter">
+          <span class="envelope-shadow"></span><span class="letter-peek"><span class="letter-heart">♥</span></span>
+          <span class="envelope-back"></span><span class="envelope-front"></span><span class="envelope-flap"></span>
+          <span class="seal" aria-hidden="true">♥</span>
+        </button>
+        <p class="envelope-caption" id="envelope-caption">Tap the envelope to open</p>
+      </div>
+      <div class="hero-foot"><span> A NOTE FROM ME</span><span>MADE WITH CARE · FOR <span data-recipient>AMARA</span></span></div>
+    </section>
+
+    <section class="letter-section" id="letter" hidden>
+      <article class="letter-card">
+        <div class="letter-topline"><span>A LETTER FOR YOU</span><span class="tiny-heart" aria-hidden="true">♥</span></div>
+        <p class="salutation">My dear <span data-recipient>Amara</span>,</p>
+        <p class="letter-lead">I owe you an apology that is honest, gentle, and entirely yours.</p>
+        <p>I’m sorry for the moment I let you down. I’ve thought about how it must have felt from your side, and I understand that my words and actions didn’t show the care you deserve. I should have listened more closely and responded with more patience.</p>
+        <p>You don’t have to make this easier for me, and you don’t owe me an answer before you’re ready. I just want you to know I see where I went wrong, and I’m willing to do the work to make things right—not only say the words.</p>
+        <p>Thank you for the warmth, laughter, and quiet kindness you bring into my life. I’m grateful for you, even in the moments when I haven’t shown it well.</p>
+        <p class="signoff">With all my heart,<br /><span data-sender>Yours, always</span></p>
+        <span class="letter-watermark" aria-hidden="true">♡</span>
+      </article>
+      <div class="promise-invitation"><p class="eyebrow centered">A FEW THINGS I WANT YOU TO KNOW</p><button class="button-secondary light" id="show-promises" type="button" aria-expanded="false" aria-controls="promises">Read my promises <span aria-hidden="true">↓</span></button></div>
+      <div class="promise-grid" id="promises" hidden>
+        <article><span class="promise-number">01</span><h3>I’ll listen better.</h3><p>Your feelings deserve my full attention, not a quick answer.</p></article>
+        <article><span class="promise-number">02</span><h3>I’ll show up.</h3><p>Care means more when you can feel it in what I do.</p></article>
+        <article><span class="promise-number">03</span><h3>I’ll give you space.</h3><p>Your time and your feelings are yours. I’ll respect both.</p></article>
+      </div>
+    </section>
+
+    <section class="response-section" id="response" hidden>
+      <div class="response-inner"><span class="response-heart" aria-hidden="true">♥</span><p class="eyebrow centered">WHENEVER YOU FEEL READY</p><h2>Can we find our way<br /><em>back to us?</em></h2>
+        <p class="response-copy">No pressure to answer right now. I just wanted you to know the door is open, whenever you are.</p>
+        <div class="response-actions" id="response-actions"><button class="button-primary" type="button" data-answer="yes">Let’s talk <span aria-hidden="true">♥</span></button><button class="button-secondary" type="button" data-answer="time">I need a little time</button></div>
+        <p class="reply-card" id="reply" role="status" hidden></p>
+      </div>
+    </section>
+  </main>
+  <footer><a href="#top" class="footer-mark" aria-label="Back to top">♥</a><p>A small reminder: you are loved, always.</p><span>MADE WITH LOVE · <span data-recipient>AMARA</span></span></footer>
+</body>
+</html>
+
+
+
+
